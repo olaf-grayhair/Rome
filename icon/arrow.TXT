@@ -1,0 +1,18 @@
+/*ARROWS*/
+.arrow_next{
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    z-index: 2;
+}
+.arrow_prev{
+    position: absolute;
+    top: 50%;
+    right: 38.5%;
+    transform: translate( 0, -50%);
+    cursor: pointer;
+    z-index: 2;
+}
+/*ARROWS*/

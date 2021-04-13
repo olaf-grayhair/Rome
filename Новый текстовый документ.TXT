@@ -1,0 +1,111 @@
+        margin: 50px 0 50px 75px;
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="js/slick/slick.css">
+  <link rel="stylesheet" href="js/slick/slick-theme.css">
+  <link rel="stylesheet" href="css/zero.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header_s1">
+      <div class="container_s1">
+        <nav class="navbar_s2"><div class="logo"><a href="index.html"><img class="logo" src="img.seasons_1/logo.png" alt=""></a></div>
+          <ul class="menu">
+            <li><a class="active" href="season_1.html">1 сезон</a></li>
+            <li><a href="#">2 сезон</a></li>
+            <li><a href="#">3 сезон</a></li>
+            <li><a href="#">4 сезон</a></li>
+            <li><a href="#">5 сезон</a></li>
+            <li><a href="#">6 сезон</a></li>
+          </ul>
+        </nav>
+        <div class="s1_block">
+            <div class="s1_block_title"><p>01</p><span>cезон</span></div>
+            <div class="s1_block_text">Сериал знакомит нас с жестоким и таинственным миром Рагнара Лодброка, воина-викинга и фермера, который жаждет исследовать—и совершать набеги-далекие берега океана. Его честолюбие ставит его в противоречие с местным вождем графом Харальдсоном, который настаивает на отправке своих рейдеров на бедный Восток, а не на неизведанный Запад. Когда Рагнар объединяется со своим другом-кораблестроителем Флоки, чтобы создать новое поколение бесстрашных кораблей, способных покорять бурные северные моря, сцена готова к конфликту. <br> <br>
+
+                Но несмотря на всю свою войну и кровопролитие, викинги также являются историей семьи и братства, захватывая любовь и привязанность между Рагнаром и его женой Лагертой, свирепой воительницей. Это история о брате Рагнара Ролло, яростном борце, который кипит от ревности; о жене графа Харальдсона Зигги, послушной красавице, которая, возможно, не слишком верна; и о монахе Ательстане, чья христианская мораль противоречит языческому обществу викингов. Когда амбиции и инновации потрясут цивилизацию, эти персонажи будут подвергнуты испытанию—и их образ жизни никогда не будет прежним.</div>
+        </div>
+      </div>
+    </header>
+    <div class="seasons">
+        <div class="container">
+          <div class="seasons_blocks">
+            <div class="seasons_blocks_title">Все серии 1 сезона</div>
+            <div class="seasons_blocks_1">
+              <div class="seasons_blocks_3">
+                <div class="cards">
+                  <div class="card_number">01</div>
+                  <img src="/img.seasons_1/episod_1.png" alt="">
+                  <div class="img_overlay"><a href="#">Смотри</a></div>
+                </div>
+                <div class="cards">
+                  <div class="card_number">02</div>
+                  <img src="/img.seasons_1/episod_2.png" alt="">
+                  <div class="img_overlay"><a href="#">Смотри</a></div>
+                </div>
+                <div class="cards">
+                  <div class="card_number">03</div>
+                  <img src="/img.seasons_1/episod_3.png" alt="">
+                  <div class="img_overlay"><a href="#">Смотри</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="seasons_blocks_1">
+              <div class="seasons_blocks_3">
+                <div class="cards">
+                  <div class="card_number">04</div>
+                  <img src="/img.seasons_1/episod_4.png" alt="">
+                  <div class="img_overlay"><a href="#">Смотри</a></div>
+                </div>
+                <div class="cards">
+                  <div class="card_number">05</div>
+                  <img src="/img.seasons_1/episod_5.png" alt="">
+                  <div class="img_overlay"><a href="#">Смотри</a></div>
+                </div>
+                <div class="cards">
+                  <div class="card_number">06</div>
+                  <img src="/img.seasons_1/episod_6.png" alt="">
+                  <div class="img_overlay"><a href="#">Смотри</a></div>
+                </div>
+              </div>
+              <div class="seasons_blocks_3">
+                <div class="cards">
+                  <div class="card_number">07</div>
+                  <img src="/img.seasons_1/episod_7.png" alt="">
+                  <div class="img_overlay"><a href="#">Смотри</a></div>
+                </div>
+                <div class="cards">
+                  <div class="card_number">08</div>
+                  <img src="/img.seasons_1/episod_8.png" alt="">
+                  <div class="img_overlay"><a href="#">Смотри</a></div>
+                </div>
+                <div class="cards">
+                  <div class="card_number">09</div>
+                  <img src="/img.seasons_1/episod_9.png" alt="">
+                  <div class="img_overlay"><a href="#">Смотри </a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+          <div class="foot">Сериал «Викинги». Правами на сериал владеет канал History.</div>
+        </div>
+      </footer>
+    </div>
+    
+  
+      <script src="js/jquery-3.5.1.min.js"></script>
+      <script src="js/slick/slick.min.js"></script>
+      <script src="js/main.js"></script>
+  </body>
+  </html>

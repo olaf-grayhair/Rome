@@ -1,0 +1,883 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,300&display=swap");
+* {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+.container {
+  max-width: 1220px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+/*HEADER*/
+.header {
+  background-image: url("https://s80658.cdn.ngenix.net/resize/2560x1280/_stor_/cms/content-contentasset/d/76/64a91b59af813a307466727de1684d76-10410-aa233365da7e4e15b9b465cce8e7ac81.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 50px;
+  height: 100vh;
+  position: relative;
+}
+
+.header::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 150px;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#111213), color-stop(43.62%, #111213), color-stop(86.33%, rgba(32, 31, 33, 0)));
+  background: linear-gradient(180deg, #111213 0%, #111213 43.62%, rgba(32, 31, 33, 0) 86.33%);
+}
+
+.header::before {
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  left: 0;
+  bottom: 0;
+  content: '';
+  background: -webkit-gradient(linear, left top, left bottom, from(#0E0E0E), color-stop(16.53%, rgba(17, 17, 17, 0.850295)), to(rgba(32, 31, 33, 0)));
+  background: linear-gradient(180deg, #0E0E0E 0%, rgba(17, 17, 17, 0.850295) 16.53%, rgba(32, 31, 33, 0) 100%);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.navbar {
+  width: 73.3%;
+  margin: 0 auto;
+  z-index: 2;
+  position: relative;
+  padding-top: 30px;
+  height: 100vh;
+}
+
+.navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 440px;
+}
+
+.navbar li {
+  padding-left: 25px;
+}
+
+.navbar li:first-child {
+  padding-left: 0px;
+}
+
+.navbar a {
+  font-size: 36px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  position: relative;
+}
+
+.navbar a::after {
+  content: '';
+  display: block;
+  background-color: #881c09;
+  width: 100%;
+  height: 4px;
+  opacity: 0;
+  position: absolute;
+  bottom: -20px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.navbar a:hover {
+  color: #881c09;
+}
+
+.navbar a:hover::after {
+  opacity: 1;
+}
+
+.logo_v img {
+  width: 100%;
+}
+
+/*HEADER*/
+/*SECTION*/
+.section {
+  background-color: #0E0E0E;
+  padding: 100px 0 104px;
+}
+
+.title {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.about_blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about_blocks-right {
+  height: 231px;
+  width: 205px;
+  line-height: 21px;
+}
+
+.about_blocks li {
+  padding-top: 22px;
+}
+
+.about_blocks li:first-child {
+  padding-top: 0px;
+}
+
+.about_blocks-left {
+  height: 227px;
+  width: 775px;
+  line-height: 21px;
+}
+
+/*SECTION*/
+/*SYOUTUBE*/
+.youtube {
+  background-image: url("../images/youtube bg.jpg");
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+  background-position: 50% 50%;
+  position: relative;
+}
+
+.youtube_bloks {
+  top: 22%;
+  left: 34%;
+  position: absolute;
+  width: 580px;
+}
+
+.youtube_bloks .youtube_title, .youtube_bloks span {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 72px;
+  color: white;
+  line-height: 84px;
+}
+
+.youtube_bloks .youtube_title span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.youtube_bloks .youtube_link {
+  line-height: 100px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  position: relative;
+}
+
+.youtube_bloks .youtube_link img {
+  z-index: 3;
+  position: relative;
+}
+
+.youtube_bloks .youtube_link a::after {
+  top: 26px;
+  left: 14px;
+  position: absolute;
+  content: '';
+  background-color: white;
+  display: block;
+  width: 70px;
+  height: 50px;
+  opacity: 0;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.youtube_bloks .youtube_link a:hover::after {
+  opacity: 1;
+}
+
+/*YOUTUBE*/
+/*CARDS*/
+.tabs .tabs__caption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
+}
+
+.tabs .tabs__caption li {
+  font-size: 32px;
+  cursor: pointer;
+  display: block;
+  margin: 0 20px;
+  position: relative;
+}
+
+.tabs .tabs__caption li::after {
+  content: '';
+  display: block;
+  background-color: #881c09;
+  width: 100%;
+  height: 4px;
+  opacity: 0;
+  position: absolute;
+  bottom: -20px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.tabs .tabs__caption .active::after {
+  opacity: 1;
+}
+
+.tabs .tabs__caption li:hover, .tabs .tabs__caption .active {
+  color: #881c09;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.seasons_blocks {
+  display: none;
+}
+
+.seasons_blocks .active {
+  display: block;
+}
+
+.seasons_blocks {
+  display: none;
+  /* по умолчанию прячем все блоки */
+}
+
+.seasons_blocks.active {
+  display: block;
+  /* по умолчанию показываем нужный блок */
+}
+
+.seasons {
+  background-color: #0E0E0E;
+  padding-top: 150px;
+}
+
+.seasons .seasons_blocks {
+  padding: 100px 0;
+}
+
+.seasons .seasons_blocks_title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 132px;
+}
+
+.seasons .seasons_blocks_3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.seasons .cards {
+  margin: 50px 25px;
+  position: relative;
+  min-width: 350px;
+}
+
+.seasons .cards img {
+  z-index: 2;
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.seasons .img_overlay a {
+  font-size: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  opacity: 0;
+  z-index: 3;
+  background: rgba(14, 14, 14, 0.8);
+}
+
+.seasons .img_overlay a:hover {
+  opacity: 1;
+}
+
+.seasons .card_number {
+  position: absolute;
+  top: -63px;
+}
+
+.seasons .card_number {
+  font-weight: bold;
+  font-size: 96px;
+  color: #600E09;
+}
+
+/*CARDS*/
+/*HEROES*/
+.header-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header-dots li {
+  padding: 0 6px;
+}
+
+.header-dots button {
+  border: none;
+  background-color: #FFFFFF;
+  opacity: .5;
+  font-size: 0;
+  padding: 0%;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  margin: 10px auto;
+}
+
+.header-dots .slick-active button {
+  width: 30px;
+  opacity: 1;
+  border-radius: 10px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.heroes {
+  background-color: #0E0E0E;
+}
+
+.heroes .heroes_block {
+  padding: 100px 0;
+}
+
+.heroes .heroes_title {
+  margin-bottom: 100px;
+  font-size: 36px;
+  text-align: center;
+}
+
+.heroes .heroes_slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.heroes .heroes_slider img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.heroes .heroes_slider .heroes_slider_block {
+  width: 348px;
+  margin-left: 75px;
+}
+
+.heroes .heroes_slider_title {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 62px;
+  line-height: 64px;
+  color: #600E09;
+  margin-bottom: 44px;
+}
+
+.heroes .heroes_slider_text {
+  line-height: 21px;
+}
+
+.heroes .heroes_slider_text span {
+  margin-bottom: 30px;
+  display: inline-block;
+  text-align: left;
+}
+
+/*HEROES*/
+/*FOOTER*/
+.footer {
+  height: 50px;
+  background-color: #0E0E0E;
+}
+
+.foot {
+  line-height: 50px;
+  text-align: center;
+}
+
+/*FOOTER*/
+/*320px*/
+@media (max-width: 474px) {
+  .container_s1, .container {
+    overflow: hidden;
+    padding: 0;
+  }
+  .seasons .seasons_blocks_3 {
+    padding: 0 10px;
+  }
+  .seasons .cards {
+    margin: 50px auto;
+    min-width: 300px;
+  }
+  .seasons img {
+    width: 100%;
+  }
+  .header {
+    height: 90vh;
+  }
+  .header_s1, .header {
+    background-image: url("https://s80658.cdn.ngenix.net/resize/2560x1280/_stor_/cms/content-contentasset/d/76/64a91b59af813a307466727de1684d76-10410-aa233365da7e4e15b9b465cce8e7ac81.jpg");
+    background-position: 27% 50%;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  .header_s1 .navbar a, .header .navbar a {
+    font-size: 22px;
+  }
+  .header_s1 .s1_block, .header .s1_block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 40px 10px 64px 10px;
+    background-color: #0E0E0E;
+  }
+  .header_s1 .s1_block_title, .header .s1_block_title {
+    text-align: center;
+  }
+  .header_s1 .s1_block_text, .header .s1_block_text {
+    margin: 0;
+  }
+  .section {
+    padding: 60px 0 60px;
+  }
+  .section .title {
+    margin-bottom: 50px;
+  }
+  .section .about_blocks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 10px;
+  }
+  .section .about_blocks-left {
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+  }
+  .youtube {
+    height: 65vh;
+    background-size: cover;
+    background-position: 20% 50%;
+  }
+  .youtube .youtube_bloks {
+    top: 10%;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    width: 300px;
+    padding: 0 5px;
+    display: block;
+  }
+  .youtube .youtube_bloks .youtube_title, .youtube .youtube_bloks span {
+    font-size: 42px;
+    line-height: 65px;
+  }
+  .youtube_link {
+    font-size: 16px;
+  }
+  .seasons .seasons_blocks {
+    padding: 50px 0;
+  }
+  .seasons .seasons_blocks .seasons_blocks_title {
+    margin-bottom: 60px;
+  }
+  .heroes .heroes_block {
+    padding: 0px 0 50px;
+  }
+  .heroes .heroes_block .heroes_title {
+    margin-bottom: 100px;
+    font-size: 36px;
+    text-align: center;
+  }
+  .heroes .heroes_block .heroes_slider {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+  }
+  .heroes .heroes_block .heroes_slider .heroes_slider_block {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .heroes .heroes_block .heroes_slider_title {
+    font-size: 42px;
+    line-height: 84px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .heroes .heroes_block .heroes_slider_text {
+    line-height: 21px;
+    text-align: center;
+    padding: 0 10px;
+  }
+  .heroes .heroes_block .heroes_slider_text span {
+    margin-bottom: 30px;
+    display: inline-block;
+    text-align: left;
+  }
+  .foot {
+    text-align: center;
+    line-height: 21px;
+    text-align: center;
+  }
+}
+
+/*320px*/
+/*476px*/
+@media (min-width: 475px) and (max-width: 767px) {
+  .container_s1, .container {
+    overflow: hidden;
+    padding: 0;
+  }
+  .seasons .seasons_blocks_3 {
+    padding: 0 10px;
+  }
+  .seasons .cards {
+    margin: 50px auto;
+    min-width: 300px;
+  }
+  .seasons img {
+    width: 100%;
+  }
+  .header {
+    height: 90vh;
+  }
+  .header_s1, .header {
+    background-image: url("https://s80658.cdn.ngenix.net/resize/2560x1280/_stor_/cms/content-contentasset/d/76/64a91b59af813a307466727de1684d76-10410-aa233365da7e4e15b9b465cce8e7ac81.jpg");
+    background-position: 27% 50%;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  .header_s1 .navbar a, .header .navbar a {
+    font-size: 22px;
+  }
+  .header_s1 .s1_block, .header .s1_block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 40px 10px 64px 10px;
+    background-color: #0E0E0E;
+  }
+  .header_s1 .s1_block_title, .header .s1_block_title {
+    text-align: center;
+  }
+  .header_s1 .s1_block_text, .header .s1_block_text {
+    margin: 0;
+  }
+  .section {
+    padding: 60px 0 60px;
+  }
+  .section .title {
+    margin-bottom: 50px;
+  }
+  .section .about_blocks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 10px;
+  }
+  .section .about_blocks-left {
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+  }
+  .youtube {
+    height: 65vh;
+    background-size: cover;
+    background-position: 20% 50%;
+  }
+  .youtube .youtube_bloks {
+    top: 10%;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    width: 320px;
+    padding: 0 5px;
+    display: block;
+  }
+  .youtube .youtube_bloks .youtube_title, .youtube .youtube_bloks span {
+    font-size: 42px;
+    line-height: 65px;
+  }
+  .youtube_link {
+    font-size: 16px;
+  }
+  .seasons .seasons_blocks {
+    padding: 50px 0;
+  }
+  .seasons .seasons_blocks .seasons_blocks_title {
+    margin-bottom: 60px;
+  }
+  .heroes .heroes_block {
+    padding: 0px 0 50px;
+  }
+  .heroes .heroes_block .heroes_title {
+    margin-bottom: 100px;
+    font-size: 36px;
+    text-align: center;
+  }
+  .heroes .heroes_block .heroes_slider {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+  }
+  .heroes .heroes_block .heroes_slider .heroes_slider_block {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .heroes .heroes_block .heroes_slider_title {
+    font-size: 42px;
+    line-height: 84px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .heroes .heroes_block .heroes_slider_text {
+    line-height: 21px;
+    text-align: center;
+    padding: 0 10px;
+  }
+  .heroes .heroes_block .heroes_slider_text span {
+    margin-bottom: 30px;
+    display: inline-block;
+    text-align: left;
+  }
+  .foot {
+    text-align: center;
+    line-height: 21px;
+    text-align: center;
+  }
+}
+
+/*476px*/
+/*750px*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .container_s1, .container {
+    overflow: hidden;
+    padding: 0;
+  }
+  .seasons .seasons_blocks_3 {
+    padding: 0 10px;
+  }
+  .seasons .cards {
+    margin: 50px auto;
+    min-width: 300px;
+  }
+  .seasons img {
+    width: 100%;
+  }
+  .header {
+    height: 90vh;
+  }
+  .header_s1, .header {
+    background-image: url("https://s80658.cdn.ngenix.net/resize/2560x1280/_stor_/cms/content-contentasset/d/76/64a91b59af813a307466727de1684d76-10410-aa233365da7e4e15b9b465cce8e7ac81.jpg");
+    background-position: 27% 50%;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  .header_s1 .navbar a, .header .navbar a {
+    font-size: 22px;
+  }
+  .header_s1 .s1_block, .header .s1_block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 40px 10px 64px 10px;
+    background-color: #0E0E0E;
+  }
+  .header_s1 .s1_block_title, .header .s1_block_title {
+    text-align: center;
+  }
+  .header_s1 .s1_block_text, .header .s1_block_text {
+    margin: 0;
+  }
+  .section {
+    padding: 60px 0 60px;
+  }
+  .section .title {
+    margin-bottom: 50px;
+  }
+  .section .about_blocks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 10px;
+  }
+  .section .about_blocks-left {
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+  }
+  .youtube {
+    height: 65vh;
+    background-size: cover;
+    background-position: 20% 50%;
+  }
+  .youtube .youtube_bloks {
+    top: 10%;
+    right: 50%;
+    width: 320px;
+    padding: 0 5px;
+    display: block;
+  }
+  .youtube .youtube_bloks .youtube_title, .youtube .youtube_bloks span {
+    font-size: 42px;
+  }
+  .youtube_link {
+    font-size: 16px;
+  }
+  .seasons .seasons_blocks {
+    padding: 50px 0;
+  }
+  .seasons .seasons_blocks .seasons_blocks_title {
+    margin-bottom: 60px;
+  }
+  .heroes .heroes_block {
+    padding: 0px 0 50px;
+  }
+  .heroes .heroes_block .heroes_title {
+    margin-bottom: 100px;
+    font-size: 36px;
+    text-align: center;
+  }
+  .heroes .heroes_block .heroes_slider {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+  }
+  .heroes .heroes_block .heroes_slider .heroes_slider_block {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .heroes .heroes_block .heroes_slider_title {
+    font-size: 42px;
+    line-height: 84px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .heroes .heroes_block .heroes_slider_text {
+    line-height: 21px;
+    text-align: center;
+    padding: 0 10px;
+  }
+  .heroes .heroes_block .heroes_slider_text span {
+    margin-bottom: 30px;
+    display: inline-block;
+    text-align: left;
+  }
+  .foot {
+    text-align: center;
+    line-height: 21px;
+    text-align: center;
+  }
+}
+
+/*750px*/
+/*980px*/
+@media (min-width: 992px) and (max-width: 1170px) {
+  .container {
+    width: 980px;
+    padding: 0 10px;
+  }
+}
+
+/*980px*/
+/*# sourceMappingURL=style.css.map */
